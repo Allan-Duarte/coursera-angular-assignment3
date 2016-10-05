@@ -1,0 +1,8 @@
+<ul>
+  <li ng-repeat="item in foundItemsCtrl.foundItems" class="col-xs-12">
+    <p class="col-xs-3">{{item.short_name}}</p>
+    <p class="col-xs-3">{{ item.name }}</p>
+    <p class="col-xs-3">{{item.description}}</p>    
+    <button ng-click="foundItemsCtrl.onRemove({index: $index})"  class="col-xs-3">Don't want this one!</button>
+  </li>
+</ul>
